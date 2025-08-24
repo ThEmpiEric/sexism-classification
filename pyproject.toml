@@ -1,7 +1,24 @@
 [project]
 name = "sexism-clasification"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.1"
+description = "Experimentos de clasificación de sexismo"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # Dependencias base
+    "markupsafe>=2.1.0",
+    "pandas>=2.3.2",
+
+    # PyTorch CUDA 12.4 para Windows + Python 3.12
+    'torch @ https://download.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp312-cp312-win_amd64.whl ; platform_system == "Windows" and python_version == "3.12"',
+    'torchvision @ https://download.pytorch.org/whl/cu124/torchvision-0.21.0%2Bcu124-cp312-cp312-win_amd64.whl ; platform_system == "Windows" and python_version == "3.12"',
+    'torchaudio @ https://download.pytorch.org/whl/cu124/torchaudio-2.6.0%2Bcu124-cp312-cp312-win_amd64.whl ; platform_system == "Windows" and python_version == "3.12"',
+
+    # NLP y ML
+    "transformers>=4.55,<5",
+    "datasets",
+    "safetensors",
+    "scikit-learn",
+    "tqdm",
+]
+

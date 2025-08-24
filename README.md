@@ -1,6 +1,6 @@
 <div align="center">
 
-**Exploración de modelos BERT con cabezas clasificadoras para la detección de sexismo en texto**
+### **Exploración de modelos BERT con cabezas clasificadoras para la detección de sexismo en texto**
 ______________________________________________________________________
 
 </div>
@@ -12,6 +12,14 @@ El trabajo realizado aquí plantea introducir una aplicación de la Búsqueda de
 ## Highlights
 
 ## Estructura del proyecto
+
+.
+├── pyproject.toml         # Configuración del proyecto y dependencias 
+├── main.py                # Script principal de ejecución
+└── src/                   # Código fuente del proyecto
+    ├── Data-Injection.py  # Cargar y preprocesamiento de datos
+    └── Model-Training.py  # Scripts para entrenar modelo base
+
 
 ## Instalación
 
