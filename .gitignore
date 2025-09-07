@@ -12,3 +12,7 @@ wheels/
 
 uv.lock
 .python-version
+
+#data
+data/
+*.csv
